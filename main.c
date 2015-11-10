@@ -12,12 +12,13 @@ int main()
 
     /* global parameter */
     nids_params.device = "all";
-    nids_params.filename = "test.cap";
+    // nids_params.filename = "test.cap"; // for offline .pcap file
+    
     nids_params.pcap_filter = filter_exp;
 
     struct nids_chksum_ctl chksum;
 
-    chksum.netaddr = 0;
+    chksum.netaddr = ;0
     chksum.mask = 0;
     chksum.action = 1;
     nids_register_chksum_ctl(&chksum,1);
